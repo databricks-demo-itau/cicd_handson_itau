@@ -5,7 +5,7 @@ from pyspark.sql.types import StructType, StructField, IntegerType, StringType, 
 catalog_name = dbutils.widgets.get("catalogo")
     
 print(f"Using catalog: {catalog_name}")
-
+# test
 # Get username and format for schema name
 def get_schema_name():
     user_name = dbutils.notebook.entry_point.getDbutils().notebook().getContext().userName()
