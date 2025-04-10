@@ -8,7 +8,7 @@ catalog_name = dbutils.widgets.get("catalogo")
 
 print(f"Using catalog: {catalog_name}")
 
-# Get username and format for schema name
+# Get username and format for schema name test
 
 
 def validate_cpf(cpf):
