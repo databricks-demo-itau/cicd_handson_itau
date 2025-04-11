@@ -142,7 +142,7 @@ jobs:
       
       - name: Run unit tests
         run: |
-          pytest -xvs tests
+          pytest -v -p no:warnings
         env:
           DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST_HML }}
           DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN_HML }}       
