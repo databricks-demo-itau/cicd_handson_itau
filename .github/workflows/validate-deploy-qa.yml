@@ -133,7 +133,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pytest databricks-connect
+          pip install pytest databricks-connect PyYAML
           
       - name: Install Databricks CLI
         run: |
