@@ -13,7 +13,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "s
 @pytest.fixture(scope="module")
 def spark_fixture():
     """Create a Spark session for testing."""
-    spark = DatabricksSession.builder.profile("itauhml").serverless(True).getOrCreate()
+    spark = DatabricksSession.builder.profile("DEFAULT").serverless(True).getOrCreate()
     yield spark
     spark.stop()
 
